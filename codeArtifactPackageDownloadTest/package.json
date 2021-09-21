@@ -1,0 +1,16 @@
+{
+  "name": "codeartifactpackagedownloadtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npm run co:login",
+    "co:login": "aws codeartifact login --tool npm --repository test-repo --domain glebs-codeartifact",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }, "dependencies": {
+    "@gm-codeartifact/codeartifact": "^1.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

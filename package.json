@@ -1,0 +1,14 @@
+{
+  "name": "@gm-codeartifact/codeartifact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "npm run co:login",
+    "co:login": "aws codeartifact login --tool npm --repository test-repo --domain glebs-codeartifact",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
